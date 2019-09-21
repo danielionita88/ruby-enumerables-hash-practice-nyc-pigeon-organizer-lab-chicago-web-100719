@@ -11,6 +11,7 @@ def nyc_pigeon_organizer(data)
         organized_data[name] = {} 
         if !organized_data[name].has_keys?[atribute]
           organized_data[name][atribute] =[]
+          organized_data[name][atribute].push()
     
     
       end
