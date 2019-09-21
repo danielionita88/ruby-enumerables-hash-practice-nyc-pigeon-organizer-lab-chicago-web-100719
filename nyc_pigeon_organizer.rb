@@ -1,5 +1,5 @@
 
-
+require 'pry'
 
 def nyc_pigeon_organizer(data)
   organized_data = {}
@@ -10,6 +10,7 @@ def nyc_pigeon_organizer(data)
         organized_data[name] = {} if !organized_data[name]
         organized_data[name][atribute] =[] if !organized_data[name][atribute]
         organized_data[name][atribute].push(sub_atribute)
+        binding.pry
       end
     end
   end
