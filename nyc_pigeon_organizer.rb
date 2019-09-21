@@ -6,11 +6,13 @@ def nyc_pigeon_organizer(data)
   
   data.each do |atribute,value|
     value.each do |sub_atribute,pigeon_name|
+      pigeon_name.each do |name|
     
     
     binding.pry
+      end
+    end
   end
-end
 
   organized_data
 end
