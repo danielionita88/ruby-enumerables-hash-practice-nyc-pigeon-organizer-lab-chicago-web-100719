@@ -9,7 +9,8 @@ def nyc_pigeon_organizer(data)
       pigeon_name.each do |name|
         if !organized_data.has_key?(name)
         organized_data[name] = {} 
-        if !organized_data[name][atribute]
+        if !organized_data[name].has_keys?[atribute]
+          organized_data[name][atribute] =[]
     
     
       end
