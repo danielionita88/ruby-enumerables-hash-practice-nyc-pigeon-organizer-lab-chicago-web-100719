@@ -8,9 +8,9 @@ def nyc_pigeon_organizer(data)
     value.each do |sub_atribute,pigeon_name|
       pigeon_name.each do |name|
         organized_data[name] = {} if !organized_data[name]
-        if !organized_data[name].has_keys?[atribute]
-          organized_data[name][atribute] =[]
-          organized_data[name][atribute].push(sub_atribute)
+        organized_data[name][atribute] =[] if !organized_data[name][atribute]
+        organized_data[name][atribute].push(sub_atribute)
+        
     
     
       end
